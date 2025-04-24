@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Enrolment</title>
+    <link rel="stylesheet" href="styleall.css">
+</head>
+<body>
+
+    <!-- Header --> 
+    <header> 
+        <div class="header-container"> 
+            <div class="header-logo"> 
+                <img src="logo.png" alt="Logo"> 
+                <span class="site-name">Pink Horizon</span> 
+            </div> 
+            <nav class="header-nav"> 
+                <a href="Activities.html"> 
+                    <div class="nav-icon"><img src="activities.png" alt="Activities Icon"></div> 
+                    Activities 
+                </a> 
+                <a href="coaches.html"> 
+                    <div class="nav-icon"><img src="coach.png" alt="Coaches Icon"></div> 
+                    Coaches 
+                </a> 
+                <a href="Parentdashboard.html"> 
+                    <div class="nav-icon"><img src="parent.png" alt="Parent Icon"></div> 
+                    Parent 
+                </a> 
+                <a href="administrator.html"> 
+                    <div class="nav-icon"><img src="admin.png" alt="Administrator Icon"></div> 
+                    Administrator 
+                </a> 
+            </nav> 
+        </div> 
+    </header>
+
+    <div class="breadcrumb">
+        <a href="home.html">Home</a> >
+        <a href="Parentdashboard.html">Parent Dashboard </a> >
+        <a href="Activityenrolment.html" class="active">Activity Enrolment</a>
+    </div>
+
+    <h1>Activity Enrolment</h1>
+
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="child">Select:</label>
+                <select id="child" name="child" required>
+                    <option value="" disabled selected>Choose your kid</option>
+                    <!-- أسماء الأطفال ستتم تعبئتها من Local Storage -->
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="skill">Skill Level:</label>
+                <select id="skill" name="skill">
+                    <option value="">Select Skill</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                    <option value="">Select Age</option>
+                    <option value="5-7">5-7</option>
+                    <option value="8-10">8-10</option>
+                    <option value="11-13">11-13</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height:</label>
+                <select id="height" name="height">
+                    <option value="">Select Height</option>
+                    <option value="Short">Short</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Tall">Tall</option>
+                </select>
+            </div>
+
+
+            <!-- فلترة الأنشطة -->
+            <div class="form-group">
+                <label for="activity-filter">Filter by Coach or Prerequisite:</label>
+                <select id="activity-filter">
+                    <option value="">No Filter</option>
+                    <!-- الخيارات تتولد من JavaScript -->
+                </select>
+            </div>
+
+            <!-- الأنشطة -->
+            <div class="activities-container">
+                <div class="activity-card">
+                    <img src="Ballet.jpg" alt="Activity 1">
+                    <p>Ballet</p>
+                    <input type="checkbox" name="activity1">
+                </div>
+                <div class="activity-card">
+                    <img src="cooking.jpg" alt="Activity 2">
+                    <p>Cooking</p>
+                    <input type="checkbox" name="activity2">
+                </div>
+                <div class="activity-card">
+                    <img src="draw.jpg" alt="Activity 3">
+                    <p>Drawing</p>
+                    <input type="checkbox" name="activity3">
+                </div>
+                <div class="activity-card">
+                    <img src="makeup.jpg" alt="Activity 4">
+                    <p>Makeup</p>
+                    <input type="checkbox" name="activity4">
+                </div>
+                <div class="activity-card">
+                    <img src="sewing.jpg" alt="Activity 5">
+                    <p>Sewing</p>
+                    <input type="checkbox" name="activity5">
+                </div>
+                <div class="activity-card">
+                    <img src="Agriculture.jpg" alt="Activity 6">
+                    <p>Planting</p>
+                    <input type="checkbox" name="activity6">
+                </div>
+            </div>
+
+            <!-- زر الإرسال -->
+            <button type="button" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- النتيجة -->
+    <div id="result" style="margin: 20px; font-weight: bold;"></div>
+
+    <!-- Footer -->
+    <footer> 
+        <div class="footer-container"> 
+            <div class="footer-logo"> 
+                <img src="logo.png" alt="Logo"> 
+            </div> 
+            <p class="footer-title">Contact us</p> 
+            <div class="footer-contact"> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="insta.png" alt="Instagram"></a> 
+                    <p>@Pink_Horizon</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="email.png" alt="Email"></a> 
+                    <p>PinkHorizon@gmail.com</p> 
+                </div> 
+                <div class="contact-item"> 
+                    <a href="#"><img src="whats.png" alt="WhatsApp"></a> 
+                    <p>0557400029</p> 
+                </div> 
+            </div> 
+            <div class="footer-copyright"> 
+                <p>Copyright &copy; 2025 Website. All rights reserved</p> 
+            </div> 
+        </div> 
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Activityenrolment.js" defer></script>
+
+</body>
+</html>
