@@ -1,46 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  
 }
 
 /* ستايل زر التبديل */
 .theme-toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 50px;
-  background-color: #a069ff;
-  color: #fff;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  z-index: 1000;
+position: fixed;
+top: 20px;
+right: 50px;
+background-color: #a069ff;
+color: #fff;
+border: none;
+padding: 8px 14px;
+border-radius: 6px;
+cursor: pointer;
+z-index: 1000;
 }
 
 /* الثيم الداكن */
 .dark-theme {
-  background-color: #3c3b3b;
-  color: #f4f3f7;
+background-color: #3c3b3b;
+color: #f4f3f7;
 }
 
 /* تلوين الهيدر والفوتر في الثيم الداكن */
 .dark-theme header,
 .dark-theme footer {
-  background-color: #3c3b3b !important;
-  border-color: #3c3b3b !important;
-  color: #f1f1f1 !important;
+background-color: #3c3b3b !important;
+border-color: #3c3b3b !important;
+color: #f1f1f1 !important;
 }
 
 /* تلوين الروابط */
 .dark-theme a {
-  color: #ccc;
+color: #ccc;
 }
 .dark-theme a.active {
-  color: #fff;
+color: #fff;
 }
 
 /* تأكد من تلوين الحاويات الرئيسية */
@@ -48,8 +48,9 @@ body {
 .dark-theme .breadcrumb,
 .dark-theme .footer-container,
 .dark-theme .header-container {
-  background-color: #201f1f;
-  color: #f1f1f1;
+background-color: #201f1f;
+color: #f1f1f1;
+
 }
 
 /* تلوين كل النصوص */
@@ -57,7 +58,7 @@ body {
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme h3 {
-  color: #f3f2f7 !important;
+color: #f3f2f7 !important;
 }
 
 /* تلوين كل النصوص */
@@ -66,200 +67,218 @@ body {
 .dark-theme div,
 .dark-theme li,
 .dark-theme a {
-  color: #cd1e6c !important;
+color: #cd1e6c !important;
 }
 
 
 
 /* تعديل لون الروابط */
 .dark-theme a {
-  color: #b01c1c;
+color: #b01c1c;
 }
 
 .dark-theme a.active {
-  color: #4f2a2a;
-  font-weight: bold;
+color: #4f2a2a;
+font-weight: bold;
 }
 .reviews { display: flex; gap: 16px; }
 .review { position: relative; cursor: pointer; }
 .tooltip {
-  display: none;
-  position: absolute;
-  top: 100%; left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 8px;
-  border: 1px solid #ccc;
-  white-space: nowrap;
+display: none;
+position: absolute;
+top: 100%; left: 50%;
+transform: translateX(-50%);
+background: #fff;
+padding: 8px;
+border: 1px solid #ccc;
+white-space: nowrap;
 }
 .review:hover .tooltip {
-  display: block;
+display: block;
 }
-
-
-
-
-
 
 
 
 
 
 header { 
-    background-color: #b1b1b1; 
-    padding: 10px 0; 
-    border-bottom: 1px solid #979797; 
-    position: sticky; 
-    top: 0; 
-    z-index: 1; 
+  background-color: #b1b1b1; 
+  padding: 10px 0; 
+  border-bottom: 1px solid #979797; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1; 
 } 
- 
+
 .header-container { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px; 
-    height: 100px; /* تعديل الارتفاع */ 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+  height: 100px; /* تعديل الارتفاع */ 
 } 
- 
+
 /* تنسيق الشعار */ 
 .header-logo { 
-    display: flex; 
-    align-items: center; /* رفع الشعار لأعلى */ 
-    gap: 10px; /* إضافة مسافة بين الشعار واسم الموقع */ 
+  display: flex; 
+  align-items: center; /* رفع الشعار لأعلى */ 
+  gap: 10px; /* إضافة مسافة بين الشعار واسم الموقع */ 
 } 
- 
+
 .header-logo img { 
-    width: 150px; /* تقليل الحجم */ 
-    height: auto; 
+  width: 150px; /* تقليل الحجم */ 
+  height: auto; 
 } 
- 
+
 /* تنسيق قائمة التنقل */ 
 .header-nav { 
-    display: flex; 
-    gap: 20px; 
+  display: flex; 
+  gap: 20px; 
 } 
- 
+
 .header-nav a { 
-    display: flex; 
-    flex-direction: column; /* ترتيب الأيقونة فوق النص */ 
-    align-items: center; 
-    text-decoration: none; 
-    color: #050000; 
-    font-size: 18px; 
-    font-weight: normal; 
-    transition: box-shadow 4s ease-in-out 1s; 
+  display: flex; 
+  flex-direction: column; /* ترتيب الأيقونة فوق النص */ 
+  align-items: center; 
+  text-decoration: none; 
+  color: #050000; 
+  font-size: 18px; 
+  font-weight: normal; 
+  transition: box-shadow 4s ease-in-out 1s; 
 } 
- 
+
 /* تنسيق الأيقونات */ 
 .nav-icon img { 
-    width: 40px; /* حجم الأيقونة */ 
-    height: auto; 
-    margin-bottom: 5px; /* مسافة بين الأيقونة والنص */ 
+  width: 40px; /* حجم الأيقونة */ 
+  height: auto; 
+  margin-bottom: 5px; /* مسافة بين الأيقونة والنص */ 
 } 
- 
+
 /* تأثير عند التحويل */ 
 .header-nav a:hover { 
-    text-decoration: none; 
-    box-shadow: 0px 4px 8px rgba(82, 90, 6, 0.2); 
+  text-decoration: none; 
+  box-shadow: 0px 4px 8px rgba(82, 90, 6, 0.2); 
 } 
 .site-name { 
-    font-size: 24px; /* حجم مناسب لاسم الموقع */ 
-    font-weight: bold; 
-    color: white; 
-    font-family: 'Poppins', sans-serif; /* إضافة خط جميل */ 
+  font-size: 24px; /* حجم مناسب لاسم الموقع */ 
+  font-weight: bold; 
+  color: white; 
+  font-family: 'Poppins', sans-serif; /* إضافة خط جميل */ 
 }
 
 footer { 
-    background-color: #b1b1b1; 
-    padding: 8px 0;  
-    text-align: center; 
-    border-top: 1px solid #979797; 
+  background-color: #b1b1b1; 
+  padding: 8px 0;  
+  text-align: center; 
+  border-top: 1px solid #979797; 
 } 
- 
+
 /* الحاوية الرئيسية للفوتر */ 
 .footer-container { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    width: 90%; 
-    margin: auto; 
-    gap: 5px; /* تقليل المسافات بين العناصر */ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 90%; 
+  margin: auto; 
+  gap: 5px; /* تقليل المسافات بين العناصر */ 
 } 
- 
+
 /* عنوان "Contact us" */ 
 .footer-title { 
-    font-size: 14px; 
-    font-weight: bold; 
-    margin-bottom: 3px; 
+  font-size: 14px; 
+  font-weight: bold; 
+  margin-bottom: 3px; 
 } 
- 
+
 /* تنسيق قسم التواصل الاجتماعي */ 
 .footer-contact { 
-    display: flex; 
-    gap: 15px; /* تقليل المسافات بين الأيقونات */ 
-    justify-content: center; 
+  display: flex; 
+  gap: 15px; /* تقليل المسافات بين الأيقونات */ 
+  justify-content: center; 
 } 
- 
+
 /* كل عنصر في التواصل الاجتماعي */ 
 .contact-item { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    font-size: 10px; /* تصغير حجم النص */ 
-    color: #333; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  font-size: 10px; /* تصغير حجم النص */ 
+  color: #333; 
 } 
- 
+
 /* أيقونات التواصل */ 
 .contact-item a img { 
-    width: 22px; /* تصغير الأيقونات */ 
-    height: auto; 
-    transition: transform 0.3s ease-in-out; 
+  width: 22px; /* تصغير الأيقونات */ 
+  height: auto; 
+  transition: transform 0.3s ease-in-out; 
 } 
- 
+
 /* تأثير عند التحويل */ 
 .contact-item a:hover img { 
-    transform: scale(1.05); 
+  transform: scale(1.05); 
 } 
- 
+
 /* تنسيق الشعار وجعله على اليسار */ 
 .footer-logo img { 
-    width: 80px; /* تكبير الشعار قليلاً */ 
-    height: auto; 
-    position: absolute; 
-    left: 10px; /* تحريكه إلى اليسار */ 
+  width: 200px; /* تكبير الشعار قليلاً */ 
+  height: auto; 
+  position: absolute; 
+  left: 100px; /* تحريكه إلى اليسار */ 
+  
 } 
- 
+
 /* تنسيق حقوق النشر */ 
 .footer-copyright { 
-    font-size: 10px; /* تصغير الخط */ 
-    color: #333; 
-    margin-top: 5px; 
+  font-size: 10px; /* تصغير الخط */ 
+  color: #333; 
+  margin-top: 5px; 
 }
 
 h1 {
-    text-align: center;
-    font-size: 28px;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
 }
 
 
 .breadcrumb { 
-    list-style: none;
-    display: flex;
-    gap: 5px;
+  list-style: none;
+  display: flex;
+  gap: 5px;
 }
 
 .breadcrumb a {
-    text-decoration: none;
-    color: #888; /* لون رمادي للنص */
+  text-decoration: none;
+  color: #888; /* لون رمادي للنص */
 }
 
 .breadcrumb a.active {
-    color: #555; /* لون أغمق للصفحة الحالية */
-    font-weight: bold;
+  color: #555; /* لون أغمق للصفحة الحالية */
+  font-weight: bold;
 }
 
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
 
 
 /* Activities-------------------------------------------------------------*/
@@ -960,6 +979,126 @@ th {
 /* home-----------------------------------------------------------*/
 
 
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .theme-button {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .frame {
+    padding: 10px;
+  }
+
+  .overlap-3,
+  .overlap-4,
+  .overlap-5,
+  .overlap-6,
+  .overlap-7,
+  .overlap-8,
+  .overlap-9,
+  .overlap-10,
+  .overlap-11,
+  .overlap-15,
+  .overlap-16 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-photo,
+  .ballet,
+  .agriculture,
+  .sewing,
+  .cooking,
+  .drawing,
+  .pexels-karolina {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .review-content,
+  .parent-info,
+  .parent-info1 {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .text-wrapper-10,
+  .text-wrapper-11,
+  .text-wrapper-13,
+  .text-wrapper-16,
+  .activite,
+  .text-wrapper-19,
+  .text-wrapper-21,
+  .text-wrapper-22,
+  .text-wrapper-25,
+  .text-wrapper-27 {
+    font-size: 18px;
+  }
+
+  .p,
+  .text-wrapper-12,
+  .text-wrapper-15,
+  .text-wrapper-17,
+  .text-wrapper-18,
+  .text-wrapper-20,
+  .text-wrapper-23 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+}
+
+
+
 
 .frame {
     background-color: #ffffff;
@@ -972,10 +1111,11 @@ th {
   .frame .div {
     background-color: #ffffff;
     overflow: hidden;
-    width: 1127px;
+    width: 3000px;
     height: 1966px;
     position: relative;
   }
+  
   
   
   .frame .overlap-3 {
@@ -990,7 +1130,7 @@ th {
     position: absolute;
     width: 1127px;
     height: 560px;
-    top: 215px;
+    top: 0px;
     left: 0;
   }
  
@@ -1071,7 +1211,7 @@ th {
     position: absolute;
     width: 1140px;
     height: 160px;
-    top: 643px;
+    top: 590px;
     left: 0px;
     background-color: #fae5ec;
   }
@@ -1091,8 +1231,8 @@ th {
   
   .frame .lorem-ipsum-dolor {
     position: absolute;
-    width: 1111px;
-    top: 56px;
+    width: 1000px;
+    top: 35px;
     left: 16px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
@@ -1182,7 +1322,7 @@ th {
   
   .frame .text-wrapper-12 {
     width: 320px;
-    top: 32px;
+    top: 23px;
     left: 11px;
     color: #000000;
     position: absolute;
@@ -1241,7 +1381,7 @@ th {
   
   .frame .text-wrapper-15 {
     width: 300px;
-    top: 44px;
+    top: 40px;
     left: 12px;
     color: #ffffff;
     position: absolute;
@@ -1445,9 +1585,9 @@ th {
   .frame .overlap-14 {
     position: absolute;
     width: 315px;
-    height: 170px;
-    top: 47px;
-    left: 7px;
+    height: 2000px;
+    top: 55px;
+    left: 50px;
   }
   
   
@@ -1599,7 +1739,7 @@ th {
     width: 308px;
     height: 170px;
     top: 51px;
-    left: 775px;
+    left: 720px;
   }
   
   .frame .text-wrapper-27 {
